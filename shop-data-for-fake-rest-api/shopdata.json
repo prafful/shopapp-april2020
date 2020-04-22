@@ -1,0 +1,53 @@
+{
+  "user": [
+    {
+      "id": 1,
+      "userType": "visitor",
+      "firstName": "Prafful",
+      "lastName": "Daga",
+      "userGender": "he",
+      "userEmail": "prraful@gmail.com"
+    },
+    {
+      "userType": "visitor",
+      "firstName": "OBB",
+      "lastName": "O",
+      "userGender": "he",
+      "userEmail": "obbo@gmail.com",
+      "id": 2
+    },
+    {
+      "userType": "shopowner",
+      "firstName": "ashok",
+      "lastName": "J",
+      "userGender": "he",
+      "userEmail": "ashok.j@gmail.com",
+      "id": 3
+    },
+    {
+      "userType": "visitor",
+      "firstName": "P",
+      "lastName": "D",
+      "userGender": "he",
+      "userEmail": "pd@gmail.com",
+      "id": 4
+    }
+  ],
+  "shop": [
+    {
+      "ShopOwner": "Shop Owner",
+      "shopName": "Stack Tailors",
+      "address1": "Pandian Street",
+      "address2": "4/4, Globe Towers",
+      "city": "Chennai",
+      "state": "Tamil Nadu",
+      "pincode": "600097",
+      "services1": "stiching, bridal wear",
+      "services2": "suite",
+      "description": "100 years in bridal stiching business!",
+      "shopPicture": "C:\\fakepath\\SPA Angular.png",
+      "id": 1
+    }
+  ],
+  "comments": []
+}

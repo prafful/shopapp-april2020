@@ -2,41 +2,41 @@
     Register For Free!
 </div>
 
-<form>
+<form #registerUserForm="ngForm" (ngSubmit)="registerUserFromHomePage(registerUserForm.value)">
     <div class="form-group">
         <label for="exampleFormGender">I am</label>
-        <select class="form-control" id="exampleFormGender">
+        <select class="form-control" id="exampleFormGender" name="userType" [(ngModel)]="userType" required>
           <option selected>Visitor Type...</option>
-          <option value="1">Visitor</option>
-          <option value="2">Shop Owner</option>
+          <option value="visitor">Visitor</option>
+          <option value="shopowner">Shop Owner</option>
         </select>
       </div>
     <div class="form-group">
         <label for="exampleFirstName">First Name</label>
-        <input type="text" class="form-control" id="exampleFirstName" >
+        <input type="text" class="form-control" id="exampleFirstName" name="firstName"  [(ngModel)]="firstName" required>
         <small class="form-text text-muted">Input your first name.</small>
     </div>
     <div class="form-group">
         <label for="exampleLastName">Last Name</label>
-        <input type="text" class="form-control" id="exampleLastName" >
+        <input type="text" class="form-control" id="exampleLastName" name="lastName"  [(ngModel)]="lastName" required>
         <small class="form-text text-muted">Input your last name.</small>
     </div>
     <div class="form-group">
         <label for="exampleFormGender">Gender</label>
-        <select class="form-control" id="exampleFormGender">
+        <select class="form-control" id="exampleFormGender" name="userGender"  [(ngModel)]="userGender" required>
           <option selected>Gender...</option>
-          <option value="1">He</option>
-          <option value="2">She</option>
-          <option value="3">Others</option>
+          <option value="he">He</option>
+          <option value="she">She</option>
+          <option value="others">Others</option>
         </select>
       </div>
 
       <div class="form-group">
         <label for="exampleEmail">Email address</label>
-        <input type="email" class="form-control" id="exampleEmail" placeholder="name@example.com">
+        <input type="email" class="form-control" id="exampleEmail" placeholder="name@example.com" name="userEmail"  [(ngModel)]="userEmail" required>
       </div>
 
     
 
-    <button type="submit" class="btn btn-primary">Submit</button>
+    <button type="submit" class="btn btn-primary" [disabled]="!registerUserForm.valid">Submit</button>
 </form>
