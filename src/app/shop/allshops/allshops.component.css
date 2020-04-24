@@ -1,0 +1,10 @@
+.activeLink{
+    cursor: pointer;
+    color:blue;
+}
+
+.activeLink:hover{
+    cursor: pointer;
+    color:blue;
+    font-weight: bold;
+}
